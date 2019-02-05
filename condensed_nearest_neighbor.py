@@ -1,5 +1,7 @@
 
 # Author: Kevin Tan
+# Based on Condensed Nearest Neighbor (CNN)
+# Hart, P. E. (1968). The condensed nearest neighbor rule. IEEE Transactions on Information Theory 14, 515-516.
 
 import numpy as np
 from sklearn import utils
