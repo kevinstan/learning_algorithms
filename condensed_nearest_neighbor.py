@@ -25,8 +25,7 @@ def cnn(x_train, y_train, M):
     x_train, y_train = x_train[1:,:], y_train[1:]
     knn = KNeighborsClassifier(n_neighbors=1, weights='distance')
     while len(x_S) < M:
-        if len(x_S) % 5 == 1: 
-            knn.fit(x_S, y_S)
+        knn.fit(x_S, y_S)
         for i, (x, y) in enumerate(zip(x_train, y_train)):
             if knn.predict(x.reshape(-1, 784)) != y:
                 x_S.append(x)
