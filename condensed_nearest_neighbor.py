@@ -18,7 +18,6 @@ def random_prototype(x_train, y_train, M):
     x_train_M, y_train_M = utils.shuffle(x_train, y_train, n_samples=M)
     return (x_train_M, y_train_M)
 
-
 def cnn(x_train, y_train, M):
     x_S, y_S = [], []
     x_S.append(x_train[0])
